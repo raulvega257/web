@@ -1,5 +1,5 @@
 
-import PortafolioCripto from "./Portfolio/Cripto/components/cripto";
+import PortafolioCripto from "./components/cripto";
 import Link from "next/link";
 
 
