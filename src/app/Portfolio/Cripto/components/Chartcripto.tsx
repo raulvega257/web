@@ -2,11 +2,23 @@
 import { useEffect, useRef } from "react";
 import * as d3 from "d3";
 
-export default function ChartCripto({ data }) {
-  const svgRef = useRef();
-  const yAxisRef = useRef();
-  const tooltipRef = useRef();
-  const wrapperRef = useRef();
+type DataItem = {
+  DATE: string;
+  TOTAL_CRYPTO_MCAP: number | string;
+  LAST_TM_GRADE_SIGNAL: number;
+};
+
+interface ChartCriptoProps {
+  data: {
+    data: DataItem[];
+  };
+}
+
+export default function ChartCripto({ data }: ChartCriptoProps) {
+  const svgRef = useRef<SVGSVGElement | null>(null);
+  const yAxisRef = useRef<SVGSVGElement | null>(null);
+  const tooltipRef = useRef<SVGSVGElement | null>(null);
+  const wrapperRef = useRef<SVGSVGElement | null>(null);
 
   useEffect(() => {
     if (!data || !data.data || !Array.isArray(data.data)) return;
