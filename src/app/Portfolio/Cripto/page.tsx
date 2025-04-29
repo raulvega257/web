@@ -20,7 +20,7 @@ export default function portfolio() {
         
             <div className="flex justify-end">
                 <Link
-                href="/Portfolio"
+                href="/"
                 className="text-sm text-indigo-400 hover:text-indigo-300 transition duration-200"
                 >
                 ← Volver
