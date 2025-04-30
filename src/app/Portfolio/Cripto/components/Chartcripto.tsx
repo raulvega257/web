@@ -75,7 +75,7 @@ export default function ChartCripto({ data }: ChartCriptoProps) {
 
     const xAxis = d3.axisBottom(xScale)
       .ticks(10)
-      .tickFormat((d: Date | NumberValue, _i: number) =>
+      .tickFormat((d: Date | NumberValue) =>
         d3.timeFormat("%Y-%m-%d")(d instanceof Date ? d : new Date(d.valueOf()))
       );
 
@@ -191,11 +191,17 @@ export default function ChartCripto({ data }: ChartCriptoProps) {
 
         path.attr("d", line.x(d => newX(d.date)));
 
+        // signalsGroup.selectAll("circle")
+        //   .attr("cx", d => newX((d as DataItem).DATE));
+
+        // tooltipPointsGroup.selectAll("circle")
+        //   .attr("cx", d => newX((d as DataItem).DATE));
         signalsGroup.selectAll("circle")
-          .attr("cx", d => newX((d as DataItem).DATE));
+          .attr("cx", d => newX((d as { date: Date }).date));
 
         tooltipPointsGroup.selectAll("circle")
-          .attr("cx", d => newX((d as DataItem).DATE));
+          .attr("cx", d => newX((d as { date: Date }).date));
+
 
         xAxisGroup.call(xAxis.scale(newX))
           .selectAll("text")
