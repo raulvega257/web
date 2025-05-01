@@ -52,8 +52,16 @@ export default function PortafolioCripto() {
           <div className="bg-gray-800 p-4 rounded-xl shadow-inner text-gray-400">
             <span className="block text-sm">Advertencia</span>
             <p className="mt-2 text-xs text-gray-500">
-              La siguiente aplicacion usa una key gratuita de Market Metrics. Por lo cual las peticiones estan limitadas, si tienes tienes problemas con esta aplicacion contactame en mi linkedIn: https://www.linkedin.com/in/ra%C3%BAl-vega-326364272/
+              La siguiente aplicacion usa una key gratuita de Market Metrics. Por lo cual las peticiones estan limitadas, si tienes tienes problemas con esta aplicacion contactame en mi linkedIn:
             </p>
+            <a
+              href="https://www.linkedin.com/in/raúl-vega-326364272"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:underline"
+            >
+              LinkedIn
+            </a>
           </div>
           
         </div>

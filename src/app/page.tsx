@@ -114,7 +114,13 @@ export default function Main() {
                     
                       className="text-blue-200 hover:underline"
                     >
-                      mi correp
+                      <p>
+
+                        mi correo
+                      </p>
+                      <p>
+                        raul.vega.LK@proton.me
+                      </p>
                     </a>
                   </li>
                 </ul>
