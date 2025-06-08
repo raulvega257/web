@@ -16,11 +16,16 @@ export default function portfolio() {
             <div className="space-y-4">
                 <div className="bg-gray-800 text-gray-200 p-4 rounded-lg border border-gray-700">
                     <p className="mb-5">
-                        API para consultar capitalización de mercado total según Market Metrics.
+                        
+                        Esta aplicación utiliza la API de Alpha Vantage para obtener datos históricos diarios de precios de las dos criptomonedas más relevantes del mercado: Bitcoin (BTC) y Ethereum (ETH).
                     </p>
                     <p className="mb-5">
-                        La siguiente aplicacion es una api que se conecta a las bases de datos de Market Metrics para conocer la capitalización global del mercado cripto. Los puntos rojos marcan cuando el mercado estaba a la baja, y los puntos verdes cuando estaba a la alza.
+                        Permite comparar el comportamiento de estas criptomonedas frente a dos monedas fiduciarias: el Euro (EUR) y el Dólar estadounidense (USD). Los datos provienen directamente de los servidores de Alpha Vantage, actualizados diariamente a medianoche (UTC), y permiten analizar cómo han fluctuado los precios a lo largo del tiempo.
                     </p>
+                    <p className="mb-5">
+                        Ideal para realizar análisis financieros, seguimientos de inversión o simplemente para entender mejor la evolución del mercado cripto en distintos contextos monetarios.
+                    </p>
+
                     <p className="mb-5">
                         presiona el boton cargar datos
                     </p>
