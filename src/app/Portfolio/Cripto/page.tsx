@@ -27,7 +27,7 @@ export default function portfolio() {
                         Conexion API para la visualizacion del mercado cripto.
                     </p>
                     <p className="mx-10">
-                        La siguiente aplicación web esta hecha con el proposito unico de formar parte de mi portaforlio de desarrollo web. No recivo por ningun motivo fondos para ser invertidos en ningun activo financiero. 
+                        La siguiente aplicación web esta hecha con el proposito unico de formar parte de mi portaforlio de desarrollo web. No recibo por ningun motivo fondos para ser invertidos en ningun activo financiero. 
                     </p>
                
                 </div>
