@@ -11,6 +11,7 @@
   "dependencies": {
     "@api/tm-api": "file:.api/apis/tm-api",
     "d3": "^7.9.0",
+    "dayjs": "^1.11.13",
     "lucide-react": "^0.503.0",
     "next": "15.3.1",
     "react": "^19.0.0",
