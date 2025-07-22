@@ -35,7 +35,7 @@ export default function ChartCripto({ data }: ChartCriptoProps) {
       low: d.low,
     }));
 
-    const margin = { top: 30, right: 20, bottom: 50, left: 80 };
+    const margin = { top: 30, right: 20, bottom: 50, left: 60 };
     const width = containerWidth;
     const height = 400;
 

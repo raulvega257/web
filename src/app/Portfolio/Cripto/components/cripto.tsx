@@ -99,7 +99,7 @@ export default function PortafolioCripto() {
   };
 
   return (
-    <div className="bg-gray-900 text-white p-6 relative">
+    <div className="bg-gray-900 text-white p-2 md:p-6 relative">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-6">
         <div className="flex flex-col col-span-1 gap-6 order-1 md:order-2">
           <div className="space-y-4">
@@ -178,12 +178,12 @@ export default function PortafolioCripto() {
         </div>
 
         <div className="col-span-4 order-2 md:order-1">
-          <div className="bg-gray-800 p-6 rounded-2xl shadow-lg overflow-auto max-h-[600px]">
-            <h2 className="text-xl font-semibold mb-4 text-gray-200">
+          <div className="bg-gray-800 p-2 md:p-6 rounded-2xl shadow-lg overflow-auto max-h-[600px]">
+            <h2 className="text-xl font-semibold mb-4 ml-4 text-gray-200">
               {loadedCrypto} / {loadedFiat}
             </h2>
 
-            <h2 className="text-xl font-semibold mb-4 text-gray-200">
+            <h2 className="text-xl font-semibold mb-4 ml-4 text-gray-200">
               ({rangoLabel[range]})
             </h2>
 

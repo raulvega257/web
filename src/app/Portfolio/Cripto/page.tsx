@@ -12,7 +12,7 @@ export default function portfolio() {
 
 
     return (
-        <div className="p-6 bg-gray-900 rounded-2xl shadow-xl border border-gray-700 space-y-6">
+        <div className="p-2 md:p-6 bg-gray-900 rounded-2xl shadow-xl border border-gray-700 space-y-6">
             <div className="space-y-4">
                 <div className="flex ">
                     <Link
@@ -27,11 +27,11 @@ export default function portfolio() {
                         Conexion API para la visualizacion del mercado cripto.
                     </p>
                     <p className="mx-10">
-                        La siguiente aplicación web esta hecha con el proposito unico de formar parte de mi portaforlio de desarrollo web. No recibo por ningun motivo fondos para ser invertidos en ningun activo financiero. 
+                        La siguiente aplicación web esta hecha con el proposito unico de formar parte de mi portaforlio de desarrollo. No recibo por ningun motivo fondos para ser invertidos en ningun activo financiero. 
                     </p>
                
                 </div>
-                <div className="bg-gray-800 p-4 rounded-lg border border-gray-700">
+                <div className="bg-gray-800 p-1 md:p-4 rounded-lg border border-gray-700">
                     <PortafolioCripto />
                 </div>
                 <div className="bg-gray-800 text-gray-200 p-4 rounded-lg border border-gray-700">
