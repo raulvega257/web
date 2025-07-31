@@ -1,203 +1,176 @@
+
+
+
 import Link from "next/link";
 import Image from "next/image";
 
 export default function Main() {
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-white flex items-center justify-center p-6">
-
-
-      <div className="max-w-4xl w-full bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl shadow-lg p-8 space-y-8">
-
-
-        {/* Header */}
-        <div className="flex flex-col items-center space-y-4 mb-20">
+    <div className="p-2 md:p-6 bg-gray-900 rounded-2xl shadow-xl ">
+      
+      <div className="min-h-screen text-gray-200 flex flex-col rounded-2xl space-y-6">
+        {/* HEADER */}
+        <header className="bg-indigo-200  rounded-2xl p-6 flex flex-col items-center shadow-md">
           <Image
-            src="/yo/b44.jpg"
+            src="/yo/yo12.jpg"
             alt="Raul Ricardo Vega Mendoza"
-            width={150}
-            height={150}
-            className="rounded-full border-4 border-gray-700 object-cover"
+            width={300}
+            height={200}
+            className="rounded-full border-4 border-orange-200 object-cover my-4"
           />
-          <h1 className="text-4xl font-bold tracking-wide text-center">
-            Raúl Vega
-          </h1>
-          <h2 className="text-2xl font-bold tracking-wide text-center mt-10">
+          <h1 className="text-4xl text-gray-700 font-bold tracking-wide">Raúl Vega</h1>
+          <h2 className="text-lg text-gray-700 opacity-90">
             Analista de Datos y Desarrollador Frontend
           </h2>
-        </div>
+        </header>
 
-        <div className="grid grid-cols-1 md:grid-cols-2">
-          <div>
+        {/* MAIN CONTENT */}
+        <main className="flex-1 flex flex-col rounded-2xl space-y-16 p-8 mx-auto bg-gray-800">
+          {/* SOBRE MÍ + HABILIDADES */}
+          <section className="grid md:grid-cols-2 gap-12">
+            <div>
+              <h2 className="text-2xl  font-bold  pb-2 mb-4">
+                Sobre mí
+              </h2>
+              <p className="mb-3">
+                Soy una persona con un alto sentido de la responsabilidad y la
+                ética profesional. Tengo una fuerte pasión por el aprendizaje y
+                disfruto enfrentar nuevos retos que me permitan expandir mis
+                habilidades técnicas y personales.
+              </p>
+              <p className="mb-3">
+                Soy altamente autodidacta, curioso y dedicado, lo que me impulsa a
+                seguir creciendo de forma continua.
+              </p>
+              <p>
+                Me gusta integrarme a equipos de trabajo donde pueda aportar
+                ideas, aprender de los demás y contribuir activamente a los
+                objetivos comunes. Creo firmemente que el conocimiento alcanza su
+                máximo valor cuando se comparte, por eso me motiva aprender,
+                compartir y aportar para crecer junto a mi equipo y entorno.
+              </p>
+            </div>
 
-              {/* Sobre mí */}
-              <section className="space-y-2 mb-10">
-                <h2 className="text-xl font-semibold border-b border-gray-700 pb-1">
-                  Sobre mí
-                </h2>
-                <p className="text-gray-300 leading-relaxed mb-5">
-                Soy una persona con un alto sentido de la responsabilidad y la ética profesional.
-                Tengo una fuerte pasión por el aprendizaje y disfruto enfrentar nuevos retos que me permitan expandir mis habilidades técnicas y personales.
-                 
-                </p>
-                <p className="text-gray-300 leading-relaxed mb-5">
-                
-                Soy altamente autodidacta, curioso y dedicado, lo que me impulsa a seguir creciendo de forma continua.
-                 
-                </p>
-                <p className="text-gray-300 leading-relaxed">
-                
-                
-                Me gusta integrarme a equipos de trabajo donde pueda aportar ideas, aprender de los demás y contribuir activamente a los objetivos comunes.
-                Creo firmemente que el conocimiento alcanza su máximo valor cuando se comparte, por eso me motiva aprender, compartir y aportar para crecer junto a mi equipo y entorno. 
-                </p>
-              </section>
-
+            <div className="space-y-8">
               {/* Idiomas */}
-              <section className="space-y-2 mb-10">
-                <h2 className="text-xl font-semibold border-b border-gray-700 pb-1">
+              <div>
+                <h2 className="text-2xl  font-bold  pb-2 mb-2">
                   Idiomas
                 </h2>
-                <p className="text-gray-300">Español (nativo) · Inglés (conversacional)</p>
-              </section>
+                <p>Español (nativo) · Inglés (Conversacional - B2)</p>
+              </div>
 
               {/* Habilidades */}
-              <section className="space-y-2 mb-10">
-                <h2 className="text-xl font-semibold border-b border-gray-700 pb-1">
+              <div>
+                <h2 className="text-2xl  font-bold  pb-2 mb-2">
                   Habilidades
                 </h2>
-                <p className="text-gray-300">
-                  HTML, CSS, JavaScript, React, Next.js, Python (Pandas, Numpy), Ensamblador,
-                  Tableau, Power BI.
-                </p>
-              </section>
-
-
-              {/* Redes sociales */}
-              <section className="space-y-2 mb-10">
-                <h2 className="text-xl font-semibold border-b border-gray-700 pb-1">
-                  Redes y Contacto
-                </h2>
-                <ul className="flex space-x-6">
-                  <li>
-                    <a
-                      href="https://www.linkedin.com/in/raúl-vega-326364272"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-400 hover:underline"
-                    >
-                      LinkedIn
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://github.com/raulvega257"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-400 hover:underline"
-                    >
-                      GitHub
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="https://wa.me/524444970396"
-                      className="text-blue-400 hover:underline"
-                    >
-                      Mi whatsapp
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href=""
-                    
-                      className="text-blue-200 hover:underline"
-                    >
-                      <p>
-
-                        mi correo
-                      </p>
-                      <p>
-                        raul.vega.LK@proton.me
-                      </p>
-                    </a>
-                  </li>
+                <ul className="grid grid-cols-2 lg:grid-cols-3 gap-3 text-gray-200 list-none">
+                  <li>🌐 HTML</li>
+                  <li>🎨 CSS</li>
+                  <li>📜 JavaScript</li>
+                  <li>⚛️ React</li>
+                  <li>🧭 Next.js</li>
+                  <li>🐍 Python (Pandas, NumPy)</li>
+                  <li>🧠 Ensamblador</li>
+                  <li>📊 Tableau</li>
+                  <li>📈 Power BI</li>
                 </ul>
-              </section>
-          </div>
-
-          <div>
-            {/* Portafolio */}
-            <section className="space-y-2">
-              <h2 className="text-xl font-semibold border-b border-gray-700 pb-1 ml-20">
-                Portafolio
-              </h2>
-
-              <div>
-                {/* Tableau */}
-                <div className="flex flex-col items-center space-y-4 mb-20">
-                  <a
-                    href="https://public.tableau.com/app/profile/raul.vega6780/vizzes"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex flex-col items-center space-y-4 text-blue-400 hover:underline"
-                  >
-                    <Image
-                      src="/yo/tableau.png"
-                      alt="tableau"
-                      width={150}
-                      height={150}
-                      className="border-4 border-gray-700 rounded-lg hover:scale-105 transition-transform duration-300"
-                    />
-                    <h1 className="text-gray-300 text-lg font-medium">Tableau</h1>
-                  </a>
-                </div>
-
-                {/* Power BI PDF */}
-                <div className="flex flex-col items-center space-y-4 mb-20">
-                  <a
-                    href="/yo/powerbi.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex flex-col items-center space-y-2"
-                  >
-                    <Image
-                      src="/yo/powerbiimg.png"
-                      alt="powerbiimg"
-                      width={150}
-                      height={150}
-                      className="border-4 border-gray-700 rounded-lg hover:scale-105 transition-transform duration-300"
-                    />
-                    <h1 className="text-gray-300 text-lg font-medium">Power BI</h1>
-                  </a>
-                </div>
-
-                {/* Conexión API y gráfica cripto */}
-                <div className="flex flex-col items-center space-y-4 mb-20">
-                  <Link href="/Portfolio/Cripto/" className="flex flex-col items-center space-y-4 text-blue-400 hover:underline">
-                    <Image
-                      src="/yo/cripto.png"
-                      alt="cripto"
-                      width={150}
-                      height={150}
-                      className="border-4 border-gray-700 rounded-lg hover:scale-105 transition-transform duration-300"
-                    />
-                    <h1 className="text-gray-300 text-lg font-medium">
-                      Conexión API y gráfica cripto
-                    </h1>
-                  </Link>
-                </div>
               </div>
-            </section>
-          </div>
-          
+            </div>
+          </section>
+
+          {/* PORTAFOLIO */}
+          <section>
+            <h2 className="text-3xl font-bold border-b-2 border-orange-200 pb-2 mb-8">
+              Portafolio
+            </h2>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              <a
+                href="https://public.tableau.com/app/profile/raul.vega6780/vizzes"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center group"
+              >
+                <Image
+                  src="/yo/tableau.png"
+                  alt="tableau"
+                  width={150}
+                  height={150}
+                  className="rounded-xl border-6 border-sky-200 transition-transform duration-300 group-hover:scale-125 group-hover:border-sky-600"
+                />
+                <h3 className="mt-3 font-medium">Tableau</h3>
+              </a>
+
+              <a
+                href="/yo/powerbi.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center group"
+              >
+                <Image
+                  src="/yo/powerbiimg.png"
+                  alt="Power BI"
+                  width={150}
+                  height={150}
+                  className="rounded-xl border-6 border-sky-200 transition-transform duration-300 group-hover:scale-125 group-hover:border-sky-600"
+                />
+                <h3 className="mt-3 font-medium">Power BI</h3>
+              </a>
+
+              <Link
+                href="/Portfolio/Cripto/"
+                className="flex flex-col items-center group"
+              >
+                <Image
+                  src="/yo/maney.jpg"
+                  alt="cripto"
+                  width={150}
+                  height={150}
+                  className="rounded-xl border-6 border-sky-200 transition-transform duration-300 group-hover:scale-125 group-hover:border-sky-600"
+                />
+                <h3 className="mt-3 font-medium">Conexión API y gráfica cripto</h3>
+              </Link>
+            </div>
+          </section>
 
 
-
-        </div>
-
-
+        </main>
+        <footer className=" rounded-2xl  p-8  bg-gray-800">
+          <section>
+            <h2 className="text-2xl font-bold  pb-2 mb-4">
+              Redes y Contacto
+            </h2>
+            <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4 text-gray-200">
+              <a
+                href="https://www.linkedin.com/in/raúl-vega-326364272"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-sky-400 transition-colors"
+              >
+                🔗 LinkedIn
+              </a>
+              <a
+                href="https://github.com/raulvega257"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-sky-400 transition-colors"
+              >
+                💻 GitHub
+              </a>
+              <a
+                href="https://wa.me/524444970396"
+                className="hover:text-sky-400 transition-colors"
+              >
+                📱 WhatsApp
+              </a>
+              <div>
+                <p>📧 Correo:</p>
+                <p className="opacity-80">raul.vega.LK@proton.me</p>
+              </div>
+            </div>
+          </section>
+        </footer>
       </div>
     </div>
   );

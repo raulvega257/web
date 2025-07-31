@@ -42,15 +42,6 @@ export default function PortafolioCripto() {
         return;
       }
 
-      // const resultData: CriptoData[] = result.Data.Data.map((entry: any) => ({
-      //   formattedDate: dayjs.unix(entry.time).format('DD/MM/YYYY'),
-      //   open: entry.open,
-      //   close: entry.close,
-      //   low: entry.low,
-      //   high: entry.high,
-      // }));
-      
-
       // Línea 45 corregida
       const resultData: CriptoData[] = result.Data.Data.map(
         (entry: { time: number; open: number; close: number; low: number; high: number }) => ({
@@ -99,12 +90,12 @@ export default function PortafolioCripto() {
   };
 
   return (
-    <div className="bg-gray-900 text-white p-2 md:p-6 relative">
+    <div className=" text-white relative">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-6">
         <div className="flex flex-col col-span-1 gap-6 order-1 md:order-2">
           <div className="space-y-4">
             <div className="bg-gray-800 rounded-xl shadow-inner p-4 text-gray-400">
-              <details ref={cryptoRef} className="group open:ring-2 open:ring-indigo-500 transition-all">
+              <details ref={cryptoRef} className="group transition-all">
                 <summary className="cursor-pointer font-semibold text-white flex justify-between items-center">
                   <span>Divisas</span>
                   <span className="transition-transform duration-300 group-open:rotate-90">▶</span>
@@ -146,7 +137,7 @@ export default function PortafolioCripto() {
             </div>
 
             <div className="bg-gray-800 rounded-xl shadow-inner p-4 text-gray-400">
-              <details ref={rangeRef} className="group open:ring-2 open:ring-indigo-500 transition-all">
+              <details ref={rangeRef} className="group transition-all">
                 <summary className="cursor-pointer font-semibold text-white flex justify-between items-center">
                   <span>Rango</span>
                   <span className="transition-transform duration-300 group-open:rotate-90">▶</span>
@@ -171,7 +162,7 @@ export default function PortafolioCripto() {
 
           <button
             onClick={handleFetchdatacripto}
-            className="bg-indigo-600 hover:bg-indigo-500 transition-colors duration-300 text-white py-3 px-6 rounded-xl shadow-md"
+            className="bg-sky-200 hover:bg-sky-600 transition-colors duration-300 text-gray-900 hover:text-gray-200 py-3 px-6 rounded-xl shadow-md"
           >
             Cargar datos
           </button>
@@ -179,37 +170,39 @@ export default function PortafolioCripto() {
 
         <div className="col-span-4 order-2 md:order-1">
           <div className="bg-gray-800 p-2 md:p-6 rounded-2xl shadow-lg overflow-auto max-h-[600px]">
-            <h2 className="text-xl font-semibold mb-4 ml-4 text-gray-200">
-              {loadedCrypto} / {loadedFiat}
-            </h2>
 
-            <h2 className="text-xl font-semibold mb-4 ml-4 text-gray-200">
-              ({rangoLabel[range]})
-            </h2>
+
 
             {rawData ? (
-              <ChartCripto data={getFilteredData()} />
+
+
+              <div>
+                <div>
+
+                  <h2 className="text-xl font-semibold mb-4 ml-4 text-orange-100">
+                    {loadedCrypto} / {loadedFiat}
+                  </h2>
+
+                  <h2 className="text-xl font-semibold mb-4 ml-4 text-orange-100">
+                    ({rangoLabel[range]})
+                  </h2>
+                </div>
+
+                <ChartCripto data={getFilteredData()} />
+              </div>
+
+
+
+
+
+
+
             ) : (
               <div>
-                <p className="my-5 text-gray-500">No hay datos cargados</p>
-                <p className="text-gray-500">Presiona el botón &quot;Cargar datos&quot;</p>
+                <p className="my-5 text-gray-300">No hay datos cargados</p>
+                <p className="text-gray-300">Presiona el botón &quot;Cargar datos&quot;</p>
               </div>
             )}
-          </div>
-
-          <div className="bg-gray-800 p-4 mt-5 rounded-xl shadow-inner text-gray-400">
-            <span className="block text-sm">Advertencia</span>
-            <p className="mt-2 text-xs text-gray-500">
-              La siguiente aplicación usa una key gratuita de CryptoCompare. Las peticiones están limitadas. Si tienes problemas, contáctame en mi LinkedIn:
-            </p>
-            <a
-              href="https://www.linkedin.com/in/raúl-vega-326364272"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-400 hover:underline"
-            >
-              LinkedIn
-            </a>
           </div>
         </div>
       </div>
