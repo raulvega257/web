@@ -22,7 +22,7 @@ export default function portfolio() {
                         Conexion API para la visualizacion del mercado cripto.
                     </p>
                     <p className="mx-10">
-                        La siguiente aplicación web esta hecha con el proposito unico de formar parte de mi portaforlio de desarrollo. No recibo por ningun motivo fondos para ser invertidos en ningun activo financiero. 
+                        La presente aplicación web ha sido desarrollada con el propósito exclusivo de formar parte de mi portafolio profesional de desarrollo. No recibo, bajo ninguna circunstancia, fondos destinados a la inversión en activos financieros. 
                     </p>
                
                 </div>
@@ -32,14 +32,15 @@ export default function portfolio() {
                 <div className="bg-gray-800 text-gray-200 p-4 rounded-lg border border-gray-700">
                     <p className="mb-5 mx-5">
                         
-                        Esta aplicación utiliza la API de CRYPTOCOMPARE POWERED BY COINDESK para obtener datos históricos diarios de precios de las criptomonedas más relevantes del mercado: Bitcoin (BTC), Ethereum (ETH), Ripple (XRP).
+                        Esta aplicación utiliza la API de CryptoCompare (con datos de Coindesk) para mostrar precios históricos diarios de Bitcoin, Ethereum y Ripple, comparándolos con el Euro, Dólar, Yen y Peso Mexicano. Los datos, actualizados cada medianoche (UTC), permiten analizar la evolución y comportamiento del mercado cripto.
+
                     </p>
-                    <p className="mb-5 mx-5">
+                    {/* <p className="mb-5 mx-5">
                         Permite comparar el comportamiento de estas criptomonedas frente a monedas fiduciarias: el Euro (EUR), el Dólar estadounidense (USD), el Yen Japones (JPY) y el Peso Mexicano (MXN). Los datos provienen directamente de los servidores de CRYPTOCOMPARE, actualizados diariamente a medianoche (UTC), y permiten analizar cómo han fluctuado los precios a lo largo del tiempo.
                     </p>
                     <p className="mb-5 mx-5">
                         Ideal para realizar análisis financieros, seguimientos de inversión o simplemente para entender mejor la evolución del mercado cripto.
-                    </p>
+                    </p> */}
 
                 </div>
             

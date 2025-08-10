@@ -33,22 +33,18 @@ export default function Main() {
                 Sobre mí
               </h2>
               <p className="mb-3">
-                Soy una persona con un alto sentido de la responsabilidad y la
-                ética profesional. Tengo una fuerte pasión por el aprendizaje y
-                disfruto enfrentar nuevos retos que me permitan expandir mis
-                habilidades técnicas y personales.
+                Profesional, responsable y con gran atención al detalle.
               </p>
               <p className="mb-3">
-                Soy altamente autodidacta, curioso y dedicado, lo que me impulsa a
-                seguir creciendo de forma continua.
+                Siento pasión por las nuevas tecnologías y mantengo un alto compromiso con el aprendizaje continuo. Soy autodidacta y orientado a resultados, me adapto con rapidez a nuevos retos y contribuyo activamente al logro de objetivos.
               </p>
-              <p>
-                Me gusta integrarme a equipos de trabajo donde pueda aportar
-                ideas, aprender de los demás y contribuir activamente a los
-                objetivos comunes. Creo firmemente que el conocimiento alcanza su
-                máximo valor cuando se comparte, por eso me motiva aprender,
-                compartir y aportar para crecer junto a mi equipo y entorno.
+              <p className="mb-3">
+                Estoy convencido de que compartir el conocimiento es clave para potenciar el crecimiento colectivo.
               </p>
+              <p className="mb-3 mt-15 text-lg ml-6">
+                - Aprender, aportar, crecer.
+              </p>
+
             </div>
 
             <div className="space-y-8">
@@ -71,7 +67,7 @@ export default function Main() {
                   <li>📜 JavaScript</li>
                   <li>⚛️ React</li>
                   <li>🧭 Next.js</li>
-                  <li>🐍 Python (Pandas, NumPy)</li>
+                  <li><p> 🐍 Python </p><p> (Pandas, NumPy) </p> </li>
                   <li>🧠 Ensamblador</li>
                   <li>📊 Tableau</li>
                   <li>📈 Power BI</li>
